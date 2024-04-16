@@ -4,6 +4,7 @@ import Header from './components/Header';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
 import { useState } from 'react';
+import useLocalizeDocumentAttributes from "../public/i18n/useLocalizeDocumentAttributes";
 
 
 
@@ -14,6 +15,8 @@ function App() {
   const toggleDarkTheme = () => {
     setToggleDarkMode(!toggleDarkMode);
   };
+
+  useLocalizeDocumentAttributes();
 
   const theme = createTheme({
     palette: {

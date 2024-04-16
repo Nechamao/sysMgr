@@ -2,7 +2,7 @@ import React from "react";
 import GridLayout from 'react-grid-layout';
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
-import BasicTable from './BasicTable';
+import CollapsibleTable from "./CollapsibleTable";
 
 
 const ExampleGrid = () => {
@@ -18,12 +18,12 @@ const ExampleGrid = () => {
     return(
         <GridLayout className="example-layout" 
                     layout={layoutConfig}
-                    cols={6}
-                    rowHeight={50}
+                    cols={12}
+                    rowHeight={30}
                     width={1200}>
 
-                 <div key="item1">
-                    <BasicTable />
+                 <div key="item1" style={{background: '#ff4d4f'}}>
+                    {/* <CollapsibleTable /> */}
                  </div>
                  <div key="item2" style={{background: '#40a9ff'}}>Item 2</div>
                  {/* <div key="item3" style={{background: '#73d1d3'}}>Item 3</div> */}
