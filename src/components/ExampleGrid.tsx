@@ -8,9 +8,9 @@ import CollapsibleTable from "./CollapsibleTable";
 const ExampleGrid = () => {
 
     const layoutConfig = [
-        {i: 'item1', x: 0, y: 0, w: 2, h: 3},
-        {i: 'item2', x: 2, y: 0, w: 4, h: 3},
-        {i: 'item3', x: 6, y: 0, w: 2, h: 3},
+        {i: 'item1', x: 0, y: 0, w: 4, h: 8},
+        {i: 'item2', x: 1, y: 1, w: 4, h: 3},
+        // {i: 'item3', x: 6, y: 0, w: 2, h: 3},
 
     ];
 
@@ -20,15 +20,13 @@ const ExampleGrid = () => {
                     layout={layoutConfig}
                     cols={12}
                     rowHeight={30}
-                    width={1200}
-                    allowOverlap={true}
-                    preventCollision={true}>
+                    width={1200}>
 
                  <div key="item1" style={{background: '#ff4d4f'}}>
                     {/* <CollapsibleTable /> */}
                  </div>
                  <div key="item2" style={{background: '#40a9ff'}}>Item 2</div>
-                 <div key="item3" style={{background: '#73d1d3'}}>Item 3</div>
+                 {/* <div key="item3" style={{background: '#73d1d3'}}>Item 3</div> */}
 
         </GridLayout>
     )
