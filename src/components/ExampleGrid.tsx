@@ -20,7 +20,9 @@ const ExampleGrid = () => {
                     layout={layoutConfig}
                     cols={12}
                     rowHeight={30}
-                    width={1200}>
+                    width={1200}
+                    allowOverlap={true}
+                    preventCollision={true}>
 
                  <div key="item1" style={{background: '#ff4d4f'}}>
                     {/* <CollapsibleTable /> */}
